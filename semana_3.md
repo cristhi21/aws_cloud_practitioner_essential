@@ -1,6 +1,6 @@
 # AWS Cloud Practitioner Essentials
 
-# Module 5: Storage and Daatabases
+# Module 5: Storage and Databases
 
 ## Almacenes de instancias y Amazon Elastic Block Store (Amazon EBS)
 
@@ -339,3 +339,166 @@ Por ejemplo, supongamos que tiene una base de datos MySQL almacenada en las inst
 **Replicación continua**
 
 - Envío continuo de copias de los datos a otros orígenes de destino en lugar de realizar una migración única
+
+
+## Servicios de base de datos adicionales
+
+**Amazon DocumentDB**
+
+[Amazon DocumentDB](https://aws.amazon.com/es/documentdb/) es un servicio de base de datos de documentos que admite cargas de trabajo de MongoDB. (MongoDB es un programa de base de datos de documentos.)
+
+**Neptuno amazónico**
+
+[Amazon Neptune](https://aws.amazon.com/es/neptune/) es un servicio de base de datos de gráficos. 
+
+Puede utilizar Amazon Neptune para crear y ejecutar aplicaciones que funcionen con conjuntos de datos altamente conectados, como motores de recomendación, detección de fraudes y gráficos de conocimiento.
+
+**Base de datos de Amazon Quantum Ledger (Amazon QLDB)**
+
+[Amazon Quantum Ledger Database (Amazon QLDB)](https://aws.amazon.com/es/qldb/) es un servicio de base de datos de contabilidad. 
+
+Puede utilizar Amazon QLDB para revisar un historial completo de todos los cambios realizados en los datos de la aplicación.
+
+**Blockchain administrado por Amazon**
+
+[Amazon Managed Blockchain](https://aws.amazon.com/es/managed-blockchain/) es un servicio que puede utilizar para crear y administrar redes de blockchain con marcos de código abierto. 
+
+Blockchain es un sistema de contabilidad distribuida que permite a múltiples partes ejecutar transacciones y compartir datos sin una autoridad central.
+
+**Amazon ElastiCache**
+
+[Amazon ElastiCache](https://aws.amazon.com/es/elasticache/) es un servicio que agrega capas de almacenamiento en caché sobre las bases de datos para ayudar a mejorar los tiempos de lectura de las solicitudes comunes. 
+
+Es compatible con dos tipos de almacenes de datos: Redis y Memcached.
+
+**Acelerador de Amazon DynamoDB**
+
+[Amazon DynamoDB Accelerator (DAX)](https://aws.amazon.com/es/dynamodb/dax/) es una memoria caché en memoria para DynamoDB. 
+
+Ayuda a mejorar los tiempos de respuesta de milisegundos de un solo dígito a microsegundos.
+
+## Actualizaciones del curso
+
+El módulo 5 contiene una actualización del contenido de lectura de Amazon Simple Storage Service (Amazon S3). Como parte de esta actualización, el artículo enumera las siguientes clases de almacenamiento nuevas:
+
+- Recuperación instantánea de Amazon S3 Glacier
+- Amazon S3 Glacier Flexible Retrieval (anteriormente conocido como Amazon S3 Glacier)
+- Puestos avanzados de Amazon S3
+
+
+# Module 5 Assessment and Resources
+
+Quiz:
+
+1. ¿Qué clases de almacenamiento de Amazon S3 están optimizadas para datos de archivo? Seleccione DOS.
+
+    - [ ] Estándar de Amazon S3
+    - [x] Recuperación flexible de Amazon S3 Glacier
+    - [ ] Creación de niveles inteligentes de Amazon S3
+    - [ ] Amazon S3 Standard-IA
+    - [x] Archivo profundo de Amazon S3 Glacier
+
+    Las dos opciones de respuesta correctas son:
+
+    - Recuperación flexible de S3 Glacier
+    - Archivo profundo del glaciar S3
+
+    Los objetos almacenados en la clase de almacenamiento S3 Glacier Flexible Retrieval se pueden recuperar en unos pocos minutos a unas pocas horas. En comparación, los objetos almacenados en la clase de almacenamiento S3 Glacier Deep Archive se pueden recuperar en un plazo de 12 horas.
+
+    Las otras opciones de respuesta son incorrectas porque:
+
+    - Amazon S3 Standard es una clase de almacenamiento ideal para datos a los que se accede con frecuencia, no para datos de archivo.
+    - Amazon S3 Intelligent-Tiering monitorea los patrones de acceso de los objetos y los mueve automáticamente entre las clases de almacenamiento Amazon S3 Standard y Amazon S3 Standard-IA. No está diseñado para datos de archivo.
+    - Amazon S3 Standard-IA es ideal para datos a los que se accede con poca frecuencia, pero que requieren alta disponibilidad cuando es necesario.
+
+    **Aprende más:**
+
+    - [Clases de almacenamiento de Amazon S3](https://aws.amazon.com/es/s3/storage-classes/)
+
+
+2. ¿Qué declaración o declaraciones son TRUE sobre los volúmenes de Amazon EBS y los sistemas de archivos de Amazon EFS?
+
+    - [x] Los volúmenes de EBS almacenan datos dentro de una única zona de disponibilidad. Los sistemas de archivos de Amazon EFS almacenan datos en varias zonas de disponibilidad.
+    - [ ] Los volúmenes de EBS almacenan datos en varias zonas de disponibilidad. Los sistemas de archivos de Amazon EFS almacenan datos dentro de una única zona de disponibilidad.
+    - [ ] Los volúmenes de EBS y los sistemas de archivos de Amazon EFS almacenan datos dentro de una única zona de disponibilidad.
+    - [ ] Los volúmenes de EBS y los sistemas de archivos de Amazon EFS almacenan datos en varias zonas de disponibilidad.
+
+    **Correcto**
+    La opción de respuesta correcta es: **los volúmenes de EBS almacenan datos dentro de una única zona de disponibilidad. Los sistemas de archivos de Amazon EFS almacenan datos en varias zonas de disponibilidad.**
+
+    Un volumen de EBS debe estar ubicado en la misma zona de disponibilidad que la instancia Amazon EC2 a la que está conectado.
+
+    Se puede acceder simultáneamente a los datos de un sistema de archivos de Amazon EFS desde todas las zonas de disponibilidad de la región donde se encuentra el sistema de archivos.
+
+    **Aprende más:**
+
+    - [Volúmenes de Amazon EBS](https://docs.aws.amazon.com/es_es/AWSEC2/latest/UserGuide/ebs-volumes.html)
+    - [Amazon EFS: Cómo funciona](https://docs.aws.amazon.com/es_es/efs/latest/ug/how-it-works.html)
+
+3. Desea almacenar datos en un servicio de almacenamiento de objetos. ¿Qué servicio de AWS es el mejor para este tipo de almacenamiento?
+
+    - Servicio de almacenamiento simple de Amazon (Amazon S3)
+
+    La opción de respuesta correcta es Amazon Simple Storage Service (Amazon S3).
+
+    Las otras opciones de respuesta son incorrectas porque:
+
+    - Amazon Managed Blockchain es un servicio que puede utilizar para crear y administrar redes de blockchain con marcos de código abierto. Blockchain es un sistema de contabilidad distribuida que permite a múltiples partes ejecutar transacciones y compartir datos sin una autoridad central.
+    - Amazon Elastic File System (Amazon EFS) es un sistema de archivos escalable que se utiliza con los servicios en la nube de AWS y los recursos locales. No almacena datos como almacenamiento de objetos.
+    - Amazon Elastic Block Store (Amazon EBS) es un servicio que proporciona volúmenes de almacenamiento a nivel de bloque que puede utilizar con instancias Amazon EC2.
+
+    **Aprende más:**
+
+    - [Amazon S3](https://aws.amazon.com/es/s3/)
+    - [¿Qué es el almacenamiento de objetos en la nube?](https://aws.amazon.com/es/what-is-cloud-object-storage/)
+
+4. ¿Qué declaración describe mejor Amazon DynamoDB?
+
+    - Un servicio de base de datos clave-valor sin servidor
+
+    La opción de respuesta correcta es Un servicio de base de datos clave-valor sin servidor.
+
+    Amazon DynamoDB es un servicio de base de datos clave-valor. No tiene servidor, lo que significa que no tiene que aprovisionar, aplicar parches ni administrar servidores.
+
+    Las otras opciones de respuesta son incorrectas porque:
+
+    - Un servicio que le permite ejecutar bases de datos relacionales en la nube de AWS describe Amazon Relational Database Service (Amazon RDS).
+    - Un servicio que puede utilizar para migrar bases de datos relacionales, bases de datos no relacionales y otros tipos de almacenes de datos describe AWS Database Migration Service (AWS DMS).
+    - Una base de datos relacional de clase empresarial describe Amazon Aurora.
+
+    **Aprende más:**
+
+    - [Amazon DynamoDB](https://aws.amazon.com/es/dynamodb/)
+
+5. ¿Qué servicio se utiliza para consultar y analizar datos en un almacén de datos?
+
+    - Amazon Redshift
+
+    La opción de respuesta correcta es Amazon Redshift.
+
+    Amazon Redshift es un servicio de almacenamiento de datos que puede utilizar para el análisis de big data. Utilice Amazon Redshift para recopilar datos de muchos orígenes y ayudarle a comprender las relaciones y tendencias en sus datos. 
+
+    Las otras opciones de respuesta son incorrectas porque:
+
+    - Amazon Neptune es un servicio de base de datos de gráficos. Puede utilizar Amazon Neptune para crear y ejecutar aplicaciones que funcionen con conjuntos de datos altamente conectados, como motores de recomendación, detección de fraudes y gráficos de conocimiento.
+    - Amazon DocumentDB es un servicio de base de datos de documentos que admite cargas de trabajo de MongoDB.
+    - Amazon ElastiCache es un servicio que agrega capas de almacenamiento en caché sobre las bases de datos para ayudar a mejorar los tiempos de lectura de las solicitudes comunes.
+
+    **Aprende más:**
+
+    - [Amazon Redshift](https://aws.amazon.com/es/redshift/)
+
+
+## Recursos
+
+Para obtener más información sobre los conceptos que se exploraron en el Módulo 5, revise estos recursos.
+
+- [Almacenamiento en la nube en AWS](https://aws.amazon.com/es/products/storage/)
+- [Blog de almacenamiento de AWS](https://aws.amazon.com/es/blogs/storage/)
+- [Tutoriales prácticos: Almacenamiento](https://aws.amazon.com/es/getting-started/hands-on/?awsf.getting-started-category=category%23storage&awsf.getting-started-content-type=content-type%23hands-on&awsf.getting-started-level=*all)
+- [Historias de clientes de AWS: Almacenamiento](https://aws.amazon.com/es/solutions/case-studies/?customer-references-cards.sort-by=item.additionalFields.publishedDate&customer-references-cards.sort-order=desc&awsf.customer-references-location=*all&awsf.customer-references-segment=*all&awsf.customer-references-product=product%23vpc%7Cproduct%23api-gateway%7Cproduct%23cloudfront%7Cproduct%23route53%7Cproduct%23directconnect%7Cproduct%23elb&awsf.customer-references-category=category%23storage)
+- [Servicio de migración de bases de datos de AWS](https://aws.amazon.com/es/dms/)
+- [Bases de datos en AWS](https://aws.amazon.com/es/products/databases/)
+- [Categoría Deep Dive: Bases de datos](https://aws.amazon.com/es/getting-started/deep-dive-databases/)
+- [Blog de base de datos de AWS](https://aws.amazon.com/es/blogs/database/)
+- [Historias de clientes de AWS: bases de datos](https://aws.amazon.com/es/solutions/case-studies/?customer-references-cards.sort-by=item.additionalFields.publishedDate&customer-references-cards.sort-order=desc&awsf.customer-references-location=*all&awsf.customer-references-segment=*all&awsf.customer-references-product=product%23vpc%7Cproduct%23api-gateway%7Cproduct%23cloudfront%7Cproduct%23route53%7Cproduct%23directconnect%7Cproduct%23elb&awsf.customer-references-category=category%23databases&awsf.content-type=*all&awsf.customer-references-industry=*all&awsf.customer-references-use-case=*all&awsf.customer-references-tech-category=*all)
