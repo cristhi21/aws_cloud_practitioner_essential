@@ -1,5 +1,7 @@
 # AWS Cloud Practitioner Essentials
 
+# Module 1: Introduction to Amazon Web Services
+
 ## What is Cloud Computing?
 
 Cloud computing is the on-demand delivery of IT resources over the Internet with pay-as-you-go pricing. On-demand delivery indicates AWS has the resources you need when you need them.
@@ -114,7 +116,7 @@ To learn more about the concepts that were explored in Module 1, review these re
 - [Cloud computing with AWS](https://aws.amazon.com/es/what-is-aws/)
 
 
-## Introduction to Module 2
+# Module 2: Compute in the Cloud
 
 ## Amazon Elastic Compute Cloud (Amazon EC2)
 
