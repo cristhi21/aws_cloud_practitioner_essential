@@ -398,7 +398,7 @@ Quiz:
     - [ ] Amazon S3 Standard-IA
     - [x] Archivo profundo de Amazon S3 Glacier
 
-    Las dos opciones de respuesta correctas son:
+    **Las dos opciones de respuesta correctas son:**
 
     - Recuperación flexible de S3 Glacier
     - Archivo profundo del glaciar S3
@@ -437,9 +437,12 @@ Quiz:
 
 3. Desea almacenar datos en un servicio de almacenamiento de objetos. ¿Qué servicio de AWS es el mejor para este tipo de almacenamiento?
 
-    - Servicio de almacenamiento simple de Amazon (Amazon S3)
+    - [ ] Blockchain administrado por Amazon
+    - [ ] Amazon Elastic File System (Amazon EFS)
+    - [ ] Amazon Elastic Block Store (Amazon EBS)
+    - [x] Servicio de almacenamiento simple de Amazon (Amazon S3)
 
-    La opción de respuesta correcta es Amazon Simple Storage Service (Amazon S3).
+    La opción de respuesta correcta es **Amazon Simple Storage Service (Amazon S3).**
 
     Las otras opciones de respuesta son incorrectas porque:
 
@@ -454,9 +457,12 @@ Quiz:
 
 4. ¿Qué declaración describe mejor Amazon DynamoDB?
 
-    - Un servicio de base de datos clave-valor sin servidor
+    - [ ] Un servicio que le permite ejecutar bases de datos relacionales en la nube de AWS
+    - [x] Un servicio de base de datos clave-valor sin servidor
+    - [ ] Un servicio que puede usar para migrar bases de datos relacionales, bases de datos no relacionales y otros tipos de almacenes de datos
+    - [ ] Una base de datos relacional de clase empresarial
 
-    La opción de respuesta correcta es Un servicio de base de datos clave-valor sin servidor.
+    La opción de respuesta correcta es **Un servicio de base de datos clave-valor sin servidor**.
 
     Amazon DynamoDB es un servicio de base de datos clave-valor. No tiene servidor, lo que significa que no tiene que aprovisionar, aplicar parches ni administrar servidores.
 
@@ -472,9 +478,13 @@ Quiz:
 
 5. ¿Qué servicio se utiliza para consultar y analizar datos en un almacén de datos?
 
-    - Amazon Redshift
+    
+    - [x] Amazon Redshift
+    - [ ] Neptuno amazónico
+    - [ ] Amazon DocumentDB
+    - [ ] Amazon ElastiCache
 
-    La opción de respuesta correcta es Amazon Redshift.
+    La opción de respuesta correcta es **Amazon Redshift.**
 
     Amazon Redshift es un servicio de almacenamiento de datos que puede utilizar para el análisis de big data. Utilice Amazon Redshift para recopilar datos de muchos orígenes y ayudarle a comprender las relaciones y tendencias en sus datos. 
 
